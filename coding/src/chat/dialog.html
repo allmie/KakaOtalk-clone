@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대화창</title>
+    <script
+      src="https://kit.fontawesome.com/200b144238.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      img {
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="max" href="#">
+        <i class="fas fa-minus"></i>
+      </a>
+      <a class="mini" href="#">
+        <i class="far fa-square"></i>
+      </a>
+      <a class="exit" href="#">
+        <i class="fas fa-times"></i>
+      </a>
+    </header>
+    <main>
+      <div class="friend">
+        <img src="../img/profile_2.jpg" alt="friend-img" />
+        <span>
+          <h6>jsb</h6>
+          <div>
+            <i class="fas fa-archive"></i>
+            <i class="fas fa-search"></i>
+          </div>
+        </span>
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="dialogs">
+        <div class="date">
+          <span>
+            -------------------2020년 8월 25일 화요일-------------------
+          </span>
+        </div>
+        <div class="my-chat">
+          <span>
+            <p>야</p>
+          </span>
+        </div>
+        <div class="my-chat">
+          <span>
+            <p>베게 4개 맞지?</p>
+          </span>
+          <span class="time">오후 4:57</span>
+        </div>
+        <div class="friend-chat">
+          <img src="../img/profile_2.jpg" alt="friend-img" />
+          <span>
+            <h6>jsb</h6>
+            <p>베게4개 커버4개</p>
+          </span>
+          <span class="time">오후 5:03</span>
+        </div>
+        <div class="my-chat">
+          <span>
+            <p>ㅇㅋ</p>
+          </span>
+          <span class="time">오후 5:04</span>
+        </div>
+      </div>
+      <div class="insert_chat">
+        <textarea name="in-chat"></textarea>
+        <input type="button" value="전송" />
+      </div>
+    </main>
+    <footer class="footer-menu">
+      <span>
+        <div class="emoticon">
+          <i class="far fa-smile"></i>
+        </div>
+        <div class="upload_file">
+          <i class="fas fa-paperclip"></i>
+        </div>
+        <div class="call">
+          <i class="fas fa-phone-alt"></i>
+        </div>
+        <div class="schedule">
+          <i class="far fa-calendar-check"></i>
+        </div>
+        <div class="">
+          <i class="fas fa-th"></i>
+        </div>
+      </span>
+      <div class="control_transparent">
+        <input type="range" name="transparent" />
+      </div>
+    </footer>
+  </body>
+</html>

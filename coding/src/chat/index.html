@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>친구</title>
+    <title>채팅</title>
     <script
       src="https://kit.fontawesome.com/200b144238.js"
       crossorigin="anonymous"
@@ -51,37 +51,43 @@
       <section>
         <div class="main_header">
           <div class="title">
-            <span>친구</span>
+            <span>채팅</span>
           </div>
-          <div class="user_add">
+          <div class="open-chat_add">
+            <a href="#">
+              <i class="far fa-comments"></i>
+            </a>
+          </div>
+          <div class="friends-chat_add">
             <a href="#">
               <i class="fas fa-user-plus"></i>
             </a>
           </div>
           <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              name="search"
+              placeholder="채팅방 이름, 참여자 검색"
+            />
+          </div>
+        </div>
+        <div class="chat">
+          <div class="chat_block">
+            <img src="../img/profile_5.jpg" alt="chat-user_image" />
             <span>
-              <i class="fas fa-search"></i>
-              <input type="text" name="search" placeholder="이름 검색" />
+              <h6>jsb</h6>
+              <p class="short-chat">베게 4개 맞지?</p>
             </span>
+            <h6 class="time">오후 4:57</h6>
           </div>
-        </div>
-        <div class="self">
-          <div class="self_block">
-            <img src="../img/profile_1.png" alt="self-image" />
-            <h5>JSW</h5>
-          </div>
-        </div>
-        <div class="user-friends">
-          <div class="title">
-            <span>친구 2</span>
-          </div>
-          <div class="friends_block">
-            <img src="../img/profile_2.jpg" alt="friend-image" />
-            <h6>Friend 1</h6>
-          </div>
-          <div class="friends_block">
-            <img src="../img/profile_3.png" alt="friend-image" />
-            <h6>Friend 1</h6>
+          <div class="chat_block">
+            <img src="../img/profile_5.png" alt="chat-user_image" />
+            <span>
+              <h6>father, sister</h6>
+              <p class="short-chat"></p>
+            </span>
+            <h6 class="time">오후 4:00</h6>
           </div>
         </div>
       </section>
