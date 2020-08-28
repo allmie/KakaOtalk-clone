@@ -9,71 +9,174 @@
       crossorigin="anonymous"
     ></script>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       img {
         height: 50px;
         width: 50px;
+      }
+      body {
+        position: relative;
+        width: 290px;
+        height: 570px;
+        border: 1px dotted rgba(255, 255, 255, 0.4);
+        background-color: rgba(133, 133, 133, 1);
+        color: rgba(255, 255, 255, 0.7);
+      }
+      header {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px 0 10px;
+      }
+      header .star {
+        font-size: 20px;
+      }
+      header .exit {
+        font-size: 10px;
+      }
+      main {
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      main .music_player {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main .music_player .album_img {
+        width: 85px;
+        height: 85px;
+      }
+      main .album_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        margin: 10px 0;
+      }
+      main .album_info > div:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      main .player_btn {
+        display: flex;
+        justify-content: space-around;
+        font-size: 15px;
+      }
+      main .player_btn > .btn:not(:last-child) {
+        margin-right: 25px;
+      }
+      main .user_detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+      }
+      main .user_detail img {
+        width: 85px;
+        height: 85px;
+        border-radius: 35%;
+      }
+      main .user_detail > .user-info {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+      }
+      main .user_detail .user-name {
+        margin-bottom: 5px;
+      }
+
+      .footer_menu {
+        width: 290px;
+        height: 100px;
+        margin-top: 20px;
+        padding: 25px 25px 30px 40px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .footer_menu > .slot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer_menu > .slot .slot_icon i {
+        height: 20px;
+      }
+      .footer_menu > .slot span {
+        margin-top: 10px;
+        font-size: 13px;
       }
     </style>
   </head>
   <body>
     <header>
-      <span>
+      <div class="star">
         <i class="far fa-star"></i>
-        <i class="fas fa-times"></i>
-      </span>
+      </div>
+      <div class="exit">
+        <i class="fas fa-times fa-lg"></i>
+      </div>
     </header>
     <main>
       <div class="music_player">
-        <div class="album_img">
-          <img src="../img/profile_5.jpg" alt="앨범 이미지" />
-        </div>
+        <img src="../img/profile_5.jpg" class="album_img" alt="앨범 이미지" />
         <div class="album_info">
           <div class="album_name">아로하</div>
-          <div class="singer">쿨(COOL)</div>
+          <div class="singer">쿨 (COOL)</div>
         </div>
-        <div class="player_bar">
-          <div class="slot">
+        <div class="player_btn">
+          <div class="btn">
             <i class="fas fa-sliders-h"></i>
           </div>
-          <div class="slot">
+          <div class="btn">
             <i class="fas fa-play"></i>
           </div>
-          <div class="slot">
+          <div class="btn">
             <i class="far fa-heart"></i>
           </div>
         </div>
       </div>
       <div class="user_detail">
         <img src="../img/profile_4.jpg" alt="프로필 이미지" />
-        <div>
+        <div class="user-info">
           <div class="user-name">
             <span>
-              JSW
+              jsb
               <i class="fas fa-pen"></i>
             </span>
           </div>
-          <div class="user_detail">신.의정부 스노우파크</div>
+          <div class="user-msg">신.의정부 스노우파크</div>
         </div>
       </div>
     </main>
     <footer class="footer_menu">
       <div class="slot">
-        <span>
+        <div class="slot_icon">
           <i class="fas fa-comment"></i>
-          1:1 채팅
-        </span>
+        </div>
+        <span> 1:1 채팅 </span>
       </div>
       <div class="slot">
-        <span>
+        <div class="slot_icon">
           <i class="fas fa-phone-alt"></i>
-          무료통화
-        </span>
+        </div>
+        <span> 무료통화 </span>
       </div>
       <div class="slot">
-        <span>
+        <div class="slot_icon">
           <i class="fas fa-quote-right"></i>
-          카카오스토리
-        </span>
+        </div>
+        <span> 카카오스토리 </span>
       </div>
     </footer>
   </body>
