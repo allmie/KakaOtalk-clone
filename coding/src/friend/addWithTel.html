@@ -8,6 +8,110 @@
       src="https://kit.fontawesome.com/200b144238.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../global.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        width: 300px;
+        height: 460px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+        color: rgba(100, 100, 100, 0.7);
+      }
+      header span {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: rgba(133, 133, 133, 0.4);
+      }
+
+      main {
+        position: absolute;
+        width: 100%;
+        margin: 40px 0 20px 0;
+      }
+
+      main .main_header {
+        border-bottom: 1px solid rgba(133, 133, 133, 0.2);
+        padding-left: 20px;
+      }
+      main .main_header .main_title {
+        margin-bottom: 30px;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 1);
+      }
+      main .main_header .menu {
+        display: flex;
+        font-size: 15px;
+      }
+      main .main_header .menu .slot {
+        padding-bottom: 10px;
+      }
+      main .main_header .menu .slot:first-child {
+        margin-right: 20px;
+        color: rgba(0, 0, 0, 1);
+        border-bottom: 2px solid rgba(0, 0, 0, 1);
+      }
+
+      main .contents {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 40px 15px 0 15px;
+      }
+      main .contents .input-name {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+      }
+      main .contents .input-tel {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+      main .contents .input-tel .location-num {
+        display: flex;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.8);
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        font-size: 10px;
+      }
+      main .contents .input-tel .location-num i {
+        padding: 0 5px;
+      }
+      main .contents .input-tel #tel {
+        width: 100%;
+        padding-left: 5px;
+        font-size: 13px;
+      }
+      main .contents p {
+        margin: 0;
+        font-size: 10px;
+        margin-bottom: 150px;
+      }
+
+      main .contents #friend_add {
+        width: 90px;
+        height: 40px;
+        padding: 10px;
+        background-color: rgba(100, 100, 100, 0.15);
+        color: rgba(100, 100, 100, 0.4);
+        border-radius: 5px;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        font-size: 15px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -16,27 +120,39 @@
       </span>
     </header>
     <main>
-      <div class="title">
-        <span>친구</span>
-      </div>
-      <div class="menu">
-        <div class="slot">
-          <span>연락처로 추가</span>
+      <div class="main_header">
+        <div class="main_title">
+          <span>친구 추가</span>
         </div>
-        <div class="slot">
-          <span>ID로 추가</span>
+        <div class="menu">
+          <div class="slot">
+            <span>연락처로 추가</span>
+          </div>
+          <div class="slot">
+            <span>ID로 추가</span>
+          </div>
         </div>
       </div>
       <div class="contents">
-        <span>
-          <input type="range" name="location" />
-          <input type="text" name="name" placeholder="이름" />
+        <span class="input-name">
+          <input type="text" name="name" id="name" placeholder="이름" />
           0/20
-          <input type="text" name="tel" placeholder="전화번호" />
         </span>
+        <div class="input-tel">
+          <span class="location-num">
+            +82
+            <i class="fas fa-chevron-down"></i>
+          </span>
+          <input type="text" name="tel" id="tel" placeholder="전화번호" />
+        </div>
         <p>친구의 이름과 전화 번호를 입력해주세요</p>
+        <input
+          type="submit"
+          name="friend_add"
+          id="friend_add"
+          value="친구 추가"
+        />
       </div>
-      <input type="button" name="friend_add" value="친구 추가" />
     </main>
   </body>
 </html>
