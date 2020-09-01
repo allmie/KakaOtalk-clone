@@ -8,18 +8,114 @@
       src="https://kit.fontawesome.com/200b144238.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../global.css" />
     <style>
-      img {
-        height: 50px;
-        width: 50px;
+      * {
+        box-sizing: border-box;
+      }
+      i {
+        color: rgba(180, 180, 180, 0.6);
+      }
+      body {
+        width: 370px;
+        height: 600px;
+        border: 1px dotted yellowgreen;
+        font-weight: 100;
+        position: relative;
+      }
+      header {
+        position: absoulte;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        margin-bottom: 10px;
+        font-weight: 100;
+        font-size: 10px;
+      }
+
+      main {
+        margin: 40px 20px 60px 20px;
+      }
+      main .title {
+        color: rgba(180, 180, 180, 1);
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: lighter;
+      }
+      main .search-bar {
+        height: 35px;
+        background-color: rgba(215, 215, 215, 0.3);
+        border-radius: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        font-size: 10px;
+      }
+      main .search-bar i {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+      }
+      main .search-bar input {
+        font-size: 15px;
+      }
+      main .friends .friends-list_title {
+        font-size: 15px;
+        color: rgba(150, 146, 146, 0.911);
+        margin-bottom: 10px;
+      }
+      main .friends .friends-list {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0;
+      }
+      main .friends .friends-list img {
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+      }
+      main .friends .friends-list span {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 17px;
+      }
+      main .submit_btn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+      main .submit_btn .ok {
+        width: 80px;
+        height: 40px;
+        background-color: rgba(150, 150, 150, 0.2);
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      main .submit_btn .cancel {
+        width: 80px;
+        height: 40px;
+        border: 1px solid rgba(150, 150, 150, 0.2);
+        border-radius: 5px;
+        font-size: 12px;
       }
     </style>
   </head>
   <body>
     <header>
-      <a class="exit" href="#">
+      <div class="exit">
         <i class="fas fa-times"></i>
-      </a>
+      </div>
     </header>
     <main>
       <div class="title">
@@ -31,19 +127,19 @@
           <input type="text" name="name" placeholder="이름 검색" />
         </span>
       </div>
-      <div class="friends-list">
+      <div class="friends">
         <div class="friends-list_title">
-          <span>친구 2</span>
+          <h6>친구 2</h6>
         </div>
-        <div class="friend">
+        <div class="friends-list">
           <img src="../img/profile_1.png" alt="friend-img" />
           <span>
             <h6>jsb</h6>
             <input type="radio" name="radio-btn" />
           </span>
         </div>
-        <div class="friend">
-          <img src="../img/profile_1.png" alt="friend-img" />
+        <div class="friends-list">
+          <img src="../img/profile_3.png" alt="friend-img" />
           <span>
             <h6>hong</h6>
             <input type="radio" name="radio-btn" />
@@ -51,8 +147,8 @@
         </div>
       </div>
       <div class="submit_btn">
-        <input type="button" value="확인" />
-        <input type="button" value="취소" />
+        <input type="button" class="ok" value="확인" />
+        <input type="button" class="cancel" value="취소" />
       </div>
     </main>
   </body>
