@@ -8,18 +8,96 @@
       src="https://kit.fontawesome.com/200b144238.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../global.css" />
     <style>
-      img {
+      * {
+        box-sizing: border-box;
+      }
+      i {
+        color: rgba(97, 89, 89, 0.8);
+      }
+      p {
+        margin: 0;
+      }
+      body {
+        left: 50px;
+        width: 490px;
+        height: 640px;
+        position: relative;
+        border: 1px solid rgba(136, 130, 130, 0.2);
+      }
+      header {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 10px;
+      }
+      main .title {
+        height: 70px;
+        width: 100%;
+        border-bottom: 0.5px solid rgba(136, 130, 130, 0.2);
+        padding: 30px 0 16px 20px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      main section {
+        display: flex;
+      }
+      main section .side-bar {
+        width: 120px;
+        height: 570px;
+        padding-top: 10px;
+        background-color: rgba(136, 130, 130, 0.2);
+      }
+      main section .side-bar .slot {
+        padding: 20px;
+        font-size: 15px;
+      }
+
+      main section .emoticon_list {
+        width: 370px;
+        height: 570px;
+      }
+      main section .emoticon_list .ad {
+        padding: 20px 20px 10px 20px;
+        width: 100%;
+        height: 130px;
+      }
+      main section .emoticon_list .ad img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+      }
+      main section .emoticon_list .emoticon {
+        padding: 15px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      main section .emoticon_list .emoticon img {
         height: 50px;
         width: 50px;
+        border-radius: 10px;
+        margin-right: 25px;
+      }
+      main section .emoticon_list .emoticon span h6 {
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
+      main section .emoticon_list .emoticon p {
+        font-size: 12px;
+        color: rgba(97, 89, 89, 0.8);
       }
     </style>
   </head>
   <body>
     <header>
-      <span>
+      <div class="exit">
         <i class="fas fa-times"></i>
-      </span>
+      </div>
     </header>
     <main>
       <div class="title">
@@ -52,58 +130,58 @@
             <img src="../img/profile_2.jpg" alt="이모티콘 이미지" />
             <span>
               <h6>행복한 슈크림 토끼 슈야 6</h6>
-              슈야
+              <p>슈야</p>
             </span>
           </div>
           <div class="emoticon">
             <img src="../img/profile_2.jpg" alt="이모티콘 이미지" />
             <span>
               <h6>질풍노도 삡삡이</h6>
-              째리
+              <p>째리</p>
             </span>
           </div>
           <div class="emoticon">
             <img src="../img/profile_2.jpg" alt="이모티콘 이미지" />
             <span>
               <h6>언냐랑 같이 흔들어</h6>
-              흥언냐
+              <p>흥언냐</p>
             </span>
           </div>
           <div class="emoticon">
             <img src="../img/profile_2.jpg" alt="이모티콘 이미지" />
             <span>
               <h6>강아지 같다 이거예요</h6>
-              전투민족
+              <p>전투민족</p>
             </span>
           </div>
-          <div class="emoticon">
+          <!-- <div class="emoticon">
             <img src="../img/profile_2.jpg" alt="이모티콘 이미지" />
             <span>
               <h6>행복한 슈크림 토끼 슈야 6</h6>
-              슈야
+              <p>슈야</p>
             </span>
           </div>
           <div class="emoticon">
             <img src="../img/profile_2.jpg" alt="이모티콘 이미지" />
             <span>
               <h6>질풍노도 삡삡이</h6>
-              째리
+              <p>째리</p>
             </span>
           </div>
           <div class="emoticon">
             <img src="../img/profile_2.jpg" alt="이모티콘 이미지" />
             <span>
               <h6>언냐랑 같이 흔들어</h6>
-              흥언냐
+              <p>흥언냐</p>
             </span>
           </div>
           <div class="emoticon">
             <img src="../img/profile_2.jpg" alt="이모티콘 이미지" />
             <span>
               <h6>강아지 같다 이거예요</h6>
-              전투민족
+              <p>전투민족</p>
             </span>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>

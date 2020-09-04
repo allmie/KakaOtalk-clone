@@ -8,36 +8,147 @@
       src="https://kit.fontawesome.com/200b144238.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../global.css" />
     <style>
-      img {
-        height: 50px;
-        width: 50px;
+      * {
+        box-sizing: border-box;
+      }
+      i {
+        color: rgba(97, 89, 89, 0.8);
+      }
+      body {
+        left: 50px;
+        width: 395px;
+        height: 640px;
+        position: relative;
+        border: 1px solid rgba(255, 255, 0, 0.5);
+      }
+      header {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 10px;
+      }
+      header > div {
+        text-align: center;
+        margin-left: 10px;
+        color: rgba(201, 201, 201, 1);
+      }
+      header .settings {
+        border-right: 1px solid rgba(97, 89, 89, 0.2);
+        padding-right: 10px;
+      }
+      main {
+        height: 540px;
+        width: 100%;
+        background-color: rgba(255, 255, 0, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 1px 0 5px rgba(97, 89, 89, 0.4);
+      }
+      /* main- margin  :100px 35px 75px 35px */
+
+      main .user_short-info {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        /* text-align: center;
+        vertical-align: center; */
+        margin-top: 100px;
+        margin-bottom: 25px;
+      }
+      main .user_short-info img {
+        height: 85px;
+        width: 85px;
+        border-radius: 25px;
+        margin-bottom: 15px;
+      }
+      main .user_short-info p {
+        margin: 0;
+        font-size: 15px;
+      }
+
+      main .locked {
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 100px;
+      }
+      main .locked .msg {
+        margin-bottom: 20px;
+      }
+      main .locked input {
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        color: rgba(97, 89, 89, 0.7);
+      }
+      main .locked .password {
+        background-color: white;
+        width: 240px;
+        height: 40px;
+        margin-bottom: 5px;
+        padding-left: 10px;
+        box-shadow: 0 0 1px rgba(97, 89, 89, 0.8);
+      }
+      main .locked .btn {
+        background-color: white;
+        width: 240px;
+        height: 40px;
+        box-shadow: 0 0 1px rgba(97, 89, 89, 0.8);
+      }
+
+      main .password_reset {
+        font-size: 15px;
+        color: rgba(97, 89, 89, 0.7);
+      }
+
+      .ad img {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        bottom: 0;
       }
     </style>
   </head>
   <body>
     <header>
-      <span>
+      <div class="alarm">
         <i class="fas fa-bell"></i>
+      </div>
+      <div class="settings">
         <i class="fas fa-cog"></i>
+      </div>
+      <div class="mini">
         <i class="fas fa-minus"></i>
+      </div>
+      <div class="max">
         <i class="far fa-square"></i>
+      </div>
+      <div class="exit">
         <i class="fas fa-times"></i>
-      </span>
+      </div>
     </header>
     <main>
       <div class="user_short-info">
-        <span>
-          <img src="../img/profile_1.png" alt="프로필 이미지" />
-          <p>all***@naver.com</p>
-        </span>
+        <img src="../img/profile_1.png" alt="프로필 이미지" />
+        <p>all***@naver.com</p>
       </div>
       <div class="locked">
         <div class="msg">
           <span>잠금모드 상태입니다</span>
         </div>
-        <input type="password" name="password" placeholder="password" />
-        <input type="button" value="확인" />
+        <div class="password">
+          <input type="password" name="password" placeholder="password" />
+        </div>
+        <div class="btn">
+          <input type="button" value="확인" />
+        </div>
       </div>
       <div class="password_reset">
         <p>비밀번호 재설정</p>
