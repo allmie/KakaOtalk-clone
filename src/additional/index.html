@@ -8,167 +8,7 @@
       src="https://kit.fontawesome.com/200b144238.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../global.css" />
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      p {
-        margin: 0;
-      }
-      i {
-        color: rgba(154, 152, 152, 1);
-      }
-      body {
-        left: 50px;
-        width: 395px;
-        height: 640px;
-        position: relative;
-        border: 1px solid rgba(160, 152, 152, 0.2);
-      }
-      header {
-        display: flex;
-        justify-content: flex-end;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        margin-bottom: 20px;
-        font-weight: 100;
-        font-size: 10px;
-      }
-      header > div {
-        text-align: center;
-        margin-left: 10px;
-        color: rgba(201, 201, 201, 1);
-      }
-
-      section {
-        display: flex;
-      }
-      .side-bar {
-        width: 70px;
-        height: 540px;
-        background-color: #f2f3f5;
-        padding: 45px 25px 30px 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        color: rgba(154, 152, 152, 1);
-      }
-      .side-bar_top > div {
-        margin-bottom: 40px;
-        font-size: 13px;
-      }
-      .side-bar_bottom > div:not(:last-child) {
-        margin-bottom: 20px;
-      }
-      main section .section_right {
-        padding: 45px 20px;
-        height: 540px;
-        width: 100%;
-      }
-      main section .section_right .title {
-        margin-bottom: 30px;
-        font-size: 20px;
-      }
-      main section .section_right .short_profile {
-        margin: 0 10px 20px 10px;
-        display: flex;
-      }
-      main section .section_right .short_profile img {
-        width: 40px;
-        height: 40px;
-        margin-right: 15px;
-        border-radius: 15px;
-      }
-      main section .section_right .short_profile .profile_info {
-        font-size: 15px;
-      }
-      main
-        section
-        .section_right
-        .short_profile
-        .profile_info
-        span
-        h6:last-child {
-        margin-top: 5px;
-        color: rgba(154, 152, 152, 1);
-      }
-      main section .section_right .my_options {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-bottom: 40px;
-        padding: 10px 0;
-        background-color: rgba(201, 201, 201, 0.2);
-        border: 0.3px solid rgba(160, 152, 152, 0.2);
-        border-radius: 5px;
-      }
-      main section .section_right .slot {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      main section .section_right .my_options .slot:not(:last-child) {
-        border-right: 1px solid rgba(160, 152, 152, 0.7);
-      }
-      main section .section_right .slot span i {
-        color: rgba(50, 50, 50, 0.7);
-        font-size: 20px;
-        margin-bottom: 5px;
-      }
-      main section .section_right .slot span p {
-        font-size: 13px;
-      }
-      main section .section_right .global_options {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-        gap: 25px;
-        padding: 0 15px 30px 15px;
-        margin-bottom: 20px;
-        border-bottom: 1px solid rgba(154, 152, 152, 0.3);
-      }
-      main section .section_right .global_options .slot {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-      }
-      main section .section_right .global_options .slot i {
-        font-size: 25px;
-      }
-      main section .section_right .global_options .slot p {
-        font-size: 10px;
-        width: 100%;
-      }
-      main section .section_right .notice span {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        font-size: 10px;
-      }
-      main section .section_right .notice span h6 {
-        margin-right: 5px;
-        font-size: 13px;
-        font-weight: 600;
-      }
-      main section .section_right .notice span p {
-        font-size: 13px;
-        color: rgba(50, 50, 50, 0.4);
-        font-weight: 600;
-      }
-
-      .ad {
-        width: 395px;
-        height: 100px;
-      }
-      .ad > img {
-        height: 100%;
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="../../css/screens/additional/index.css" />
   </head>
   <body>
     <header>
@@ -213,7 +53,7 @@
             <h5>더보기</h5>
           </div>
           <div class="short_profile">
-            <img src="../img/profile_5.jpg" alt="프로필 이미지" />
+            <img src="../../img/profile_5.jpg" alt="프로필 이미지" />
             <div class="profile_info">
               <span>
                 <h6>jsw</h6>
@@ -303,7 +143,7 @@
     </main>
     <footer class="ad">
       <footer class="ad">
-        <img src="../img/job_search.jpg" alt="광고 이미지" />
+        <img src="../../img/job_search.jpg" alt="광고 이미지" />
       </footer>
     </footer>
   </body>

@@ -1,0 +1,15 @@
+@import "reset.css";
+
+/* components */
+
+/* screens */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  top: 50px;
+  left: 50px;
+  position: relative;
+}

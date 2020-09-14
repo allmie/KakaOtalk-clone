@@ -1,0 +1,108 @@
+@import "../../components/index.css";
+@import "../../styles.css";
+
+img {
+  height: 50px;
+  width: 50px;
+}
+body {
+  left: 50px;
+  position: relative;
+  width: 290px;
+  height: 570px;
+  border: 1px dotted rgba(255, 255, 255, 0.4);
+  background-color: rgba(133, 133, 133, 1);
+  color: rgba(255, 255, 255, 0.7);
+}
+header {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0 10px;
+}
+header .star {
+  font-size: 20px;
+}
+header .exit {
+  font-size: 10px;
+}
+main {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .music_player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .music_player .album_img {
+  width: 85px;
+  height: 85px;
+}
+main .album_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 0;
+}
+main .album_info > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+main .player_btn {
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+}
+main .player_btn > .btn:not(:last-child) {
+  margin-right: 25px;
+}
+main .user_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+}
+main .user_detail img {
+  width: 85px;
+  height: 85px;
+  border-radius: 35%;
+}
+main .user_detail > .user-info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+main .user_detail .user-name {
+  margin-bottom: 5px;
+}
+
+.footer_menu {
+  width: 290px;
+  height: 100px;
+  margin-top: 20px;
+  padding: 25px 25px 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer_menu > .slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_menu > .slot .slot_icon i {
+  height: 20px;
+}
+.footer_menu > .slot span {
+  margin-top: 10px;
+  font-size: 13px;
+}

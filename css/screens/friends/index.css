@@ -1,0 +1,124 @@
+@import "../../components/index.css";
+@import "../../styles.css";
+
+i {
+  color: rgba(154, 152, 152, 1);
+}
+body {
+  left: 50px;
+  width: 395px;
+  height: 640px;
+  border: 0.2px dotted yellowgreen;
+  position: relative;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 100;
+  font-size: 10px;
+}
+header > div {
+  text-align: center;
+  margin-left: 10px;
+  color: rgba(201, 201, 201, 1);
+}
+
+section {
+  display: flex;
+}
+.side-bar {
+  width: 70px;
+  height: 540px;
+  background-color: #f2f3f5;
+  padding: 45px 25px 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(154, 152, 152, 1);
+}
+.side-bar_top > div {
+  margin-bottom: 40px;
+  font-size: 13px;
+}
+.side-bar_bottom > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+.section_right {
+  padding-top: 45px;
+  width: 325px;
+  font-weight: bold;
+}
+.section_right > div {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.section_right_header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.search-bar {
+  height: 30px;
+  background-color: rgba(230, 230, 230, 0.4);
+  border-radius: 25px;
+  padding: 10px 10px 10px 10px;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.users .self {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.users .self img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+.users .user-friends img {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+.user-friends .title {
+  border-top: 1px solid rgba(200, 200, 200, 0.4);
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  font-size: 10px;
+  font-weight: 100;
+}
+.user-friends .friends_block {
+  height: 60px;
+  padding: 10px 0;
+  font-weight: 100;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.user-friends .friends_block h6 {
+  font-size: 15px;
+}
+.user-friends .friends_block .msg {
+  color: rgba(171, 168, 169, 0.9);
+}
+
+.ad {
+  width: 395px;
+  height: 100px;
+}
+.ad > img {
+  height: 100%;
+  width: 100%;
+}

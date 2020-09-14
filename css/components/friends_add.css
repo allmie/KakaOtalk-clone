@@ -1,0 +1,35 @@
+/* friends add border */
+body {
+  width: 300px;
+  height: 460px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  color: rgba(100, 100, 100, 0.7);
+}
+header {
+  position: relative;
+}
+header .exit {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: rgba(133, 133, 133, 0.4);
+}
+main {
+  width: 100%;
+  position: absolute;
+  margin: 40px 0 20px 0;
+}
+main .main_header {
+  border-bottom: 1px solid rgba(133, 133, 133, 0.2);
+  padding-left: 20px;
+}
+main .main_header .main_title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 1);
+}
+main .main_header .menu {
+  display: flex;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
